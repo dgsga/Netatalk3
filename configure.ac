@@ -16,9 +16,6 @@ AC_PROG_CC
 AC_PROG_PERL
 LT_INIT
 
-dnl Check for Homebrew
-AC_CHECK_PROG([BREW],brew, brew)
-
 AC_SYS_LARGEFILE([], AC_MSG_ERROR([AFP 3.x support requires Large File Support.]))
 
 AC_DEFINE(OPEN_NOFOLLOW_ERRNO, ELOOP, errno returned by open with O_NOFOLLOW)
